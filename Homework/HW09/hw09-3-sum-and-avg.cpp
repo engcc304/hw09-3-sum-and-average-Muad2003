@@ -45,3 +45,48 @@
         Array2 = 7 -3 5 19 27 -16 13 -7
 
 */
+
+#include <stdio.h>
+
+int main() {
+    
+    int array1[ 100 ]  ;
+    int count = 0 , check ;
+    
+    while ( check != -1) { // รับค่าจนสิ้น -1 
+        printf ( "Input : \n" ) ;
+        scanf ( "%d", &check ) ;
+        if ( check != -1 ) {
+            array1[ count ] = check ;
+            count++ ;
+        } // end if
+    } // end while
+
+    // แสดงค่า array1 ทั้งหมด
+    printf ( "Array1 =" ) ;
+    for ( int  i = 0 ; i < count ; i++) {
+       printf ( " %d", array1[ i ] ) ;
+    } // end for
+ 
+    // แสดงค่า array2 ที่เพิ่งสร้างให้ช่องเท่ากับรอบที่เก็บ และแต่ละช่องมีค่า = 0
+    int array2[ count ] ;
+    printf ( "\nArray2 =" ) ;
+    for ( int  i = 0 ; i < count ; i++) {
+        array2[ i ] = 0 ;
+       printf ( " %d", array2[ i ] ) ;
+    } // end for
+
+    // ให้ array2 = array1
+    printf ( "\n--| Copy Data from Array1 to Array2" ) ;
+    for ( int i = 0 ; i < count ; i++ ) {
+        array2[ i ] = array1[ i ] ;
+    } // end for
+
+    // แสดง array2 ที่เพิ่งก็อปข้อมูลจาก array1 
+    printf ( "\nArray2 =" ) ;
+    for ( int i = 0 ; i < count ; i++) {
+        printf ( " %d", array2[ i] ) ;
+    } // end for
+    
+    return 0;
+}
