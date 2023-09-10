@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Set 1",
+      "setup": "g++ -o a.out ./Homework/HW09/hw09-3-sum-and-avg.cpp",
+      "run": "./a.out",
+      "input": "9\r\n5\r\n6\r\n8\r\n-1",
+      "output": "Array1 = 9 5 6 8\r\nArray2 = 0 0 0 0\r\n--| Copy Data from Array1 to Array2\r\nArray2 = 9 5 6 8",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Set 2",
+      "setup": "g++ -o a.out ./Homework/HW09/hw09-3-sum-and-avg.cpp",
+      "run": "./a.out",
+      "input": "7\r\n-3\r\n5\r\n19\r\n27\r\n-16\r\n13\r\n-7\r\n-1\r\n",
+      "output": "Array1 = 7 -3 5 19 27 -16 13 -7\r\nArray2 = 0 0 0 0 0 0 0 0\r\n--| Copy Data from Array1 to Array2\r\nArray2 = 7 -3 5 19 27 -16 13 -7",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
